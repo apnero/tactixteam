@@ -97,3 +97,9 @@ FlowRouter.route '/room-not-found/:type/:name',
 	action: (params) ->
 		Session.set 'roomNotFound', {type: params.type, name: params.name}
 		BlazeLayout.render 'main', {center: 'roomNotFound'}
+
+FlowRouter.route '/changeschedule',
+	name: 'changeschedule'
+
+	action: ->
+		BlazeLayout.render 'main', {center: 'customschedule'}

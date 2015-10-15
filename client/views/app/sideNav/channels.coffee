@@ -26,3 +26,7 @@ Template.channels.events
 	'click .more-channels': ->
 		SideNav.setFlex "listChannelsFlex"
 		SideNav.openFlex()
+
+	'click .homebutton': (event) ->
+		FlowRouter.go 'home'
+
